@@ -1,0 +1,33 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd"
+	xmlns:cm="http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.0.0">
+
+	<!-- The DataSource Connection Properties through external properties placeholder resolver -->
+	<cm:property-placeholder persistent-id="database" id="database">
+		<cm:default-properties>
+			<!-- JDBC Drivers -->
+			<cm:property name="jdbc.driverClassName" value="oracle.jdbc.pool.OracleDataSource" />
+			<cm:property name="jdbc.url" value="jdbc:oracle:thin:@127.0.0.1:1521/orcl" />
+			<cm:property name="jdbc.username" value="hr" />
+			<cm:property name="jdbc.password" value="password" />
+		</cm:default-properties>
+	</cm:property-placeholder>
+
+	<!-- Export the DataSource as the OSGi Service -->
+	<service interface="javax.sql.DataSource" ref="dataSource">
+		<service-properties>
+			<entry key="osgi.jndi.service.name" value="jdbc/ReferenceDataServiceDS" />
+		</service-properties>
+	</service>
+
+	<bean id="dataSource" class="oracle.jdbc.pool.OracleDataSource">
+		<property name="URL" value="${jdbc.url}" />
+		<property name="user" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+
+	<bean id="dataSourceValidationBean" class="com.scb.rdm.datasource.DataSourceValidationBean" init-method="validate">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+</blueprint>
