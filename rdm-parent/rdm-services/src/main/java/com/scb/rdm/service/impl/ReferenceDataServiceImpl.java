@@ -39,4 +39,9 @@ public class ReferenceDataServiceImpl implements ReferenceDataService {
 		return getCountryRepository().findAll();
 	}
 
+	@TransactionEnabled
+	public void saveCountry(Country country) {
+		getCountryRepository().persist(country);
+	}
+
 }

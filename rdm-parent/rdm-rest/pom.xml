@@ -15,7 +15,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.scb.rdm</groupId>
-			<artifactId>rdm-service</artifactId>
+			<artifactId>rdm-services</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>

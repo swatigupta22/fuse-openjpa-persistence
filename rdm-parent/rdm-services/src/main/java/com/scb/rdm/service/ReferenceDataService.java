@@ -20,4 +20,13 @@ public interface ReferenceDataService {
 	 * @return The List<Country>
 	 */
 	public List<Country> fetchAllCountries();
+
+	/**
+	 * Method to save the Country Entity.
+	 * 
+	 * @param country
+	 *            The {@link Country}
+	 */
+	public void saveCountry(Country country);
+
 }
