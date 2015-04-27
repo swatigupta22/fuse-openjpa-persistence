@@ -2,17 +2,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.scb.rdm</groupId>
-	<artifactId>ref-data-parent</artifactId>
+	<artifactId>rdm-parent</artifactId>
 	<version>1.0.0</version>
 	<name>Reference Data Management Parent Module</name>
 	<packaging>pom</packaging>
 	<description>Reference Data Management Parent Module</description>
 
 	<modules>
-		<module>ref-data-datasource</module>
-		<module>ref-data-aspect</module>
-		<module>ref-data-services</module>
-		<module>ref-data-rest</module>
-		<module>ref-data-features</module>
+		<module>rdm-datasource</module>
+		<module>rdm-aspect</module>
+		<module>rdm-services</module>
+		<module>rdm-rest</module>
+		<module>rdm-features</module>
 	</modules>
 </project>

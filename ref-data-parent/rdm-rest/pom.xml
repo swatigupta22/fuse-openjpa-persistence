@@ -7,7 +7,7 @@
 		<version>1.0.0</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>ref-data-rest</artifactId>
+	<artifactId>rdm-rest</artifactId>
 	<packaging>bundle</packaging>
 	<name>Reference Data Management REST API</name>
 	<description>Reference Data Management REST API</description>

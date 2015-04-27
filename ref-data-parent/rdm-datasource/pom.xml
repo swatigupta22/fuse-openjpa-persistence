@@ -7,7 +7,7 @@
 		<version>1.0.0</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>ref-data-datasource</artifactId>
+	<artifactId>rdm-datasource</artifactId>
 	<name>Reference Data Management DataSource using Oracle</name>
 	<description>Reference Data Management DataSource using Oracle</description>
 	<packaging>bundle</packaging>

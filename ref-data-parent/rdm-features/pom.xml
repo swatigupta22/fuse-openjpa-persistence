@@ -7,7 +7,7 @@
 		<version>1.0.0</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>ref-data-features</artifactId>
+	<artifactId>rdm-features</artifactId>
 	<name>Reference Data Features Bundle</name>
 	<description>Reference Data Features Bundle</description>
 
