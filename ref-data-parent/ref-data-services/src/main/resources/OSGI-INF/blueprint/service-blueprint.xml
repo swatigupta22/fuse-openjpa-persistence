@@ -10,7 +10,7 @@
 		<!-- The Entity Manager injected here is the container-managed provided by Aries JPA -->
 		<jpa:context unitname="rdmPersistenceUnit" property="entityManager" />
 		<!-- Indicate the Transaction Propagation attributes on the Method Levels -->
-		<tx:transaction method="*" value="Required" />
+		<!-- <tx:transaction method="*" value="Required" /> -->
 	</bean>
 
 	<!-- Reference Data Service Bean -->

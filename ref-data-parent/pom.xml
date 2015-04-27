@@ -10,6 +10,7 @@
 
 	<modules>
 		<module>ref-data-datasource</module>
+		<module>ref-data-aspect</module>
 		<module>ref-data-services</module>
 		<module>ref-data-rest</module>
 		<module>ref-data-features</module>

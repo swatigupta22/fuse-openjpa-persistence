@@ -11,6 +11,10 @@
 		<bundle>mvn:org.apache.openjpa/openjpa/2.3.0</bundle>
 	</feature>
 
+	<feature name="aspectj" version="${project.version}">
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.aspectj/1.8.5_1</bundle>
+	</feature>
+
 	<feature name="oracle" version="${project.version}">
 		<bundle>wrap:mvn:com.oracle/ojdbc6/11.2.0</bundle>
 	</feature>
@@ -26,7 +30,10 @@
 
 	<feature name="ref-data-bundles" version="${project.version}">
 		<bundle>mvn:com.scb.rdm/ref-data-datasource/${project.version}</bundle>
+		<bundle>mvn:com.scb.rdm/ref-data-aspect/${project.version}</bundle>
 		<bundle>mvn:com.scb.rdm/ref-data-service/${project.version}</bundle>
 		<bundle start-level="100">mvn:com.scb.rdm/ref-data-rest/${project.version}</bundle>
 	</feature>
+
+
 </features>
