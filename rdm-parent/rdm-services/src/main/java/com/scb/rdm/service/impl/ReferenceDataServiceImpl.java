@@ -2,7 +2,7 @@ package com.scb.rdm.service.impl;
 
 import java.util.List;
 
-import com.scb.rdm.aspect.Transactional;
+import com.scb.rdm.aspect.TransactionEnabled;
 import com.scb.rdm.entity.Country;
 import com.scb.rdm.repository.CountryRepository;
 import com.scb.rdm.service.ReferenceDataService;
@@ -34,7 +34,7 @@ public class ReferenceDataServiceImpl implements ReferenceDataService {
 		this.countryRepository = countryRepository;
 	}
 
-	@Transactional
+	@TransactionEnabled
 	public List<Country> fetchAllCountries() {
 		return getCountryRepository().findAll();
 	}
