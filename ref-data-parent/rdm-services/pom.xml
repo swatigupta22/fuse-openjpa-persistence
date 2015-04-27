@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.scb.rdm</groupId>
-		<artifactId>ref-data-parent</artifactId>
+		<artifactId>rdm-parent</artifactId>
 		<version>1.0.0</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
@@ -21,13 +21,9 @@
 		<!-- Aspect library required for AspectJ Maven Plugin -->
 		<dependency>
 			<groupId>com.scb.rdm</groupId>
-			<artifactId>ref-data-aspect</artifactId>
+			<artifactId>rdm-aspect</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-
-		
-
-
 	</dependencies>
 
 	<build>
@@ -69,7 +65,7 @@
 					<aspectLibraries>
 						<aspectLibrary>
 							<groupId>com.scb.rdm</groupId>
-							<artifactId>ref-data-aspect</artifactId>
+							<artifactId>rdm-aspect</artifactId>
 						</aspectLibrary>
 					</aspectLibraries>
 				</configuration>
