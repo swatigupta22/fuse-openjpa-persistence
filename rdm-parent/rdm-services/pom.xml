@@ -18,7 +18,11 @@
 			<artifactId>openjpa</artifactId>
 			<version>2.3.0</version>
 		</dependency>
-		<!-- Aspect library required for AspectJ Maven Plugin -->
+		<dependency>
+			<groupId>com.scb.rdm</groupId>
+			<artifactId>rdm-repository</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 		<dependency>
 			<groupId>com.scb.rdm</groupId>
 			<artifactId>rdm-aspect</artifactId>
@@ -38,6 +42,7 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
+
 			<!-- AspectJ Maven Plugin to weave the aspects -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -94,16 +99,8 @@
 						</Import-Package>
 						<DynamicImport-Package>*</DynamicImport-Package>
 						<Export-Package>
-							com.scb.rdm.service,
-							com.scb.rdm.entity
+							com.scb.rdm.service
 						</Export-Package>
-						<Private-Package>
-							com.scb.rdm.entity,
-							com.scb.rdm.repository,
-							com.scb.rdm.repository.impl,
-							com.scb.rdm.service,
-							com.scb.rdm.service.impl
-						</Private-Package>
 						<Meta-Persistence>/META-INF/persistence.xml</Meta-Persistence>
 					</instructions>
 				</configuration>
