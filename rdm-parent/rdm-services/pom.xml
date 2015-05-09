@@ -101,7 +101,6 @@
 						<Export-Package>
 							com.scb.rdm.service
 						</Export-Package>
-						<Meta-Persistence>/META-INF/persistence.xml</Meta-Persistence>
 					</instructions>
 				</configuration>
 			</plugin>
