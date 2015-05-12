@@ -3,8 +3,10 @@ OSGi Sample Projects
 This is the sample OSGi implementation project using JBoss Fuse.
 
 Build the project using the following maven command.
-$ mvn clean install
 
+<code>
+$ mvn clean install
+</code>
 Start the Fuse Container using the following command.
 
 $ ./fuse.sh
